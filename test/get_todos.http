@@ -1,5 +1,5 @@
 ### Import variables
-@baseUrl = http://localhost:8080
+@baseUrl = http://localhost:8080/api/v1
 @contentType = application/json
 
 ### ========================================
