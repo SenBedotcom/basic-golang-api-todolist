@@ -1,0 +1,32 @@
+### Import variables
+@baseUrl = http://localhost:8080
+@contentType = application/json
+
+### ========================================
+### GET/READ TODO (Success Cases)
+### ========================================
+
+### Get all Todos
+GET {{baseUrl}}/todos HTTP/1.1
+
+###
+
+### Get Todo by ID = 1
+GET {{baseUrl}}/todos/1 HTTP/1.1
+
+###
+
+### Get Todo by ID = 2
+GET {{baseUrl}}/todos/2 HTTP/1.1
+
+###
+
+### Get Todo by ID = 3
+GET {{baseUrl}}/todos/3 HTTP/1.1
+
+###
+
+### Get Todo by ID = 4
+GET {{baseUrl}}/todos/4 HTTP/1.1
+
+###

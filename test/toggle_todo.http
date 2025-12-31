@@ -1,0 +1,26 @@
+### Import variables
+@baseUrl = http://localhost:8080
+@contentType = application/json
+### ========================================
+### TOGGLE TODO (Success Cases)
+### ========================================
+
+### Toggle Todo #1 completion
+PATCH {{baseUrl}}/todos/1/toggle HTTP/1.1
+
+###
+
+### Toggle Todo #1 again (back to original state)
+PATCH {{baseUrl}}/todos/1/toggle HTTP/1.1
+
+###
+
+### Toggle Todo #2 completion
+PATCH {{baseUrl}}/todos/2/toggle HTTP/1.1
+
+###
+
+### Toggle Todo #3 completion
+PATCH {{baseUrl}}/todos/3/toggle HTTP/1.1
+
+###

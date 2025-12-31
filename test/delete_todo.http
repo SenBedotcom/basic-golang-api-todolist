@@ -1,0 +1,27 @@
+### Import variables
+@baseUrl = http://localhost:8080
+@contentType = application/json
+
+### ========================================
+### DELETE TODO (Success Cases)
+### ========================================
+
+### Delete Todo #4
+DELETE {{baseUrl}}/todos/4 HTTP/1.1
+
+###
+
+### Verify deletion - Get all remaining Todos
+GET {{baseUrl}}/todos HTTP/1.1
+
+###
+
+### Delete Todo #3
+DELETE {{baseUrl}}/todos/3 HTTP/1.1
+
+###
+
+### Verify deletion - Get all remaining Todos
+GET {{baseUrl}}/todos HTTP/1.1
+
+###

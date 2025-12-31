@@ -1,0 +1,43 @@
+### Import variables
+@baseUrl = http://localhost:8080
+@contentType = application/json
+
+### ========================================
+### UPDATE TODO (Success Cases)
+### ========================================
+
+### Update Todo #1 - Change title and description
+PUT {{baseUrl}}/todos/1 HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "title": "Buy groceries - Updated",
+  "description": "Need to buy milk, eggs, bread, and cheese",
+  "completed": false
+}
+
+###
+
+### Update Todo #2 - Mark as completed
+PUT {{baseUrl}}/todos/2 HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "title": "Finish Go project",
+  "description": "Complete the Todo API with tests - DONE!",
+  "completed": true
+}
+
+###
+
+### Update Todo #3 - Just change description
+PUT {{baseUrl}}/todos/3 HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "title": "Learn Docker",
+  "description": "Study Docker, Docker Compose, and Kubernetes",
+  "completed": false
+}
+
+###
