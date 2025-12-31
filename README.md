@@ -24,9 +24,10 @@ RESTful API สำหรับจัดการ Todo List ที่พัฒน
    - ไม่มี dependencies ต่อ layer อื่น
 
 2. **Use Case Layer** (`internalusecase/`)
-   - Business Logic
-   - ใช้งาน Domain Interfaces
-   - ไม่รู้จัก Implementation details
+   - Business Logic (กฎเกณฑ์ทางธุรกิจ)
+   - ใช้งาน Domain Interfaces (เรียกผ่าน Interface ไม่ใช่ตัวจริง)
+   - ไม่สนใจว่าข้อมูลเก็บที่ไหน หรือเก็บยังไง (Database, File, Memory)
+   - เหมือนเชฟที่สั่งอาหารผ่านเมนู ไม่ต้องรู้ว่าครัวทำอาหารยังไง
 
 3. **Repository Layer** (`internalrepository/`)
    - Database Implementation
